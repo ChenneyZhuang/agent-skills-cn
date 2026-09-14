@@ -1,14 +1,15 @@
 ---
 name: delivery-checklist
 description: |
-  Run a pre-send checklist on any deliverable — Excel files, reports, data
-  extracts — before it goes to a boss or client. Covers column limits,
-  English headers for international clients, opening the actual file to verify
-  row counts and dedup counts, logging sent batches, placing files in the
-  agreed delivery directory, and keeping candidate counts separate from
-  sendable counts. Use when preparing to send a spreadsheet, report, or data
-  file to a stakeholder, handing off batch results, or double-checking numbers
-  before an external email. 触发词：交付核对 / 发送前检查 / 文件核对 / delivery check。
+  Run a pre-send checklist on any deliverable — spreadsheets, reports, data
+  extracts — before it goes to a stakeholder or client. Covers trimming to
+  the columns the recipient acts on, headers in the recipient's language,
+  opening the actual file to verify row counts and dedup counts, logging
+  sent batches, placing files in the agreed delivery directory, and keeping
+  candidate counts separate from sendable counts. Use when preparing to send
+  a spreadsheet, report, or data file to a stakeholder, handing off batch
+  results, or double-checking numbers before an external email.
+  触发词：交付核对 / 发送前检查 / 文件核对 / delivery check。
 license: MIT
 metadata:
   version: "0.2.0"
@@ -23,9 +24,11 @@ mistakes they catch take days.
 
 ## Rules
 
-1. **Excel: columns ≤ 6, headers in English.** International clients read
-   English headers; six columns fit a screen and a printout. Wider sheets get
-   split into multiple files or trimmed to the columns the recipient acts on.
+1. **Keep the sheet tight, headers in the recipient's language.** A
+   deliverable gets read in one pass, so trim to the columns the recipient
+   acts on — a workable default is six, and wider sheets get split into
+   multiple files or cut down. International recipients read headers in
+   their own language: translate the headers, not just the data.
 2. **Open the real file.** The deliverable is the file on disk, and the only
    evidence about it comes from opening it: row count, deduplicated count,
    and a scan for placeholder residue (`TODO`, `XXX`, `[X]`, `test`,
@@ -56,7 +59,8 @@ mistakes they catch take days.
 ## Steps
 
 1. **Check the file shape.** Apply Rule 1: column count and header language.
-   Done when: the sheet has ≤ 6 columns and every header is English.
+   Done when: the sheet carries only the columns the recipient acts on, and
+   every header is in the recipient's language.
 2. **Open and verify.** Apply Rule 2: open the actual file, record row count
    and deduplicated count, and scan for placeholder residue.
    Done when: you can state the file's row count, its deduplicated count on

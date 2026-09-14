@@ -32,16 +32,16 @@ git clone https://github.com/<you>/agent-skills-cn && cp -r agent-skills-cn/skil
 ```
 
 ### [resume-localize-cn2en](skills/resume-localize-cn2en/SKILL.md)
-中文简历 → 英文技术岗简历：整段删除服务行业经历，职责改写为量化成果，语气诚恳平淡，拼写统一（AU 或 US），ATS 友好无表格。
-Localize a Chinese resume into an English technical CV: cut service-industry stints entirely, convert duties into quantified outcomes, keep the tone plain and honest, unify to one spelling variant, keep it ATS-parsable.
+中文简历 → 英文技术岗简历：淡化服务行业经历（有更强素材时整段删除）、删除人口统计学字段，职责改写为量化成果，语气诚恳平淡，拼写统一（AU 或 US），ATS 友好无表格。
+Localize a Chinese resume into an English technical CV: demote service-industry stints (cut them entirely when stronger material exists), strip demographic fields, convert duties into quantified outcomes, keep the tone plain and honest, unify to one spelling variant, keep it ATS-parsable.
 
 ```bash
 git clone https://github.com/<you>/agent-skills-cn && cp -r agent-skills-cn/skills/resume-localize-cn2en ~/.claude/skills/
 ```
 
 ### [delivery-checklist](skills/delivery-checklist/SKILL.md)
-交付物发出前核对清单：Excel ≤6 列全英文表头、实开文件核对行数与去重计数、已发批次入台账、文件进既定交付目录、候选数与可发送数分开报。
-Pre-send verification for deliverables: Excel ≤ 6 columns with English headers, open the real file to verify row/dedup counts, log sent batches in a ledger, keep files in the agreed delivery directory, and report candidate vs sendable counts as different numbers.
+交付物发出前核对清单：只留收件人真正要用的列、表头用收件人的语言、实开文件核对行数与去重计数、已发批次入台账、文件进既定交付目录、候选数与可发送数分开报。
+Pre-send verification for deliverables: keep only the columns the recipient acts on with headers in their language, open the real file to verify row/dedup counts, log sent batches in a ledger, keep files in the agreed delivery directory, and report candidate vs sendable counts as different numbers.
 
 ```bash
 git clone https://github.com/<you>/agent-skills-cn && cp -r agent-skills-cn/skills/delivery-checklist ~/.claude/skills/

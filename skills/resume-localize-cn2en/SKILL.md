@@ -1,8 +1,9 @@
 ---
 name: resume-localize-cn2en
 description: |
-  Localize a Chinese resume into an English resume for technical roles: cut
-  service-industry stints, convert duties into quantified outcomes, keep the
+  Localize a Chinese resume into an English resume for technical roles: demote
+  service-industry stints, strip demographic fields, convert duties into
+  quantified outcomes, keep the
   tone plain and honest, unify spelling to one English variant, and keep the
   document ATS-parsable. Use when translating or adapting a Chinese CV for
   English-speaking tech job applications, reviewing a bilingual resume before
@@ -24,11 +25,13 @@ content for the reader's expectations — the translation is the easy half.
 
 ## Rules
 
-1. **Cut service-industry stints entirely.** Food service, retail, waiting
-   tables, and similar service jobs subtract from a technical application:
-   they signal a career path the reader did not expect and consume the
-   seconds that matter. Remove the whole entry, including the skills listed
-   under it. Professional internships stay.
+1. **Lead with technical evidence; demote service-industry stints.** Food
+   service, retail, waiting tables, and similar service jobs rarely help a
+   technical application: they consume the seconds that matter and signal a
+   career path the reader did not expect. When stronger material exists, cut
+   the entry entirely, including the skills listed under it; when it carries
+   the only work history, compress it to one line instead of deleting the
+   section empty. Professional internships stay.
 2. **Strip demographic fields.** Chinese resumes carry gender, age, a photo,
    marital status, and sometimes hukou or political affiliation; AU/US/UK
    employers exclude these so reviewers stay clear of discrimination
