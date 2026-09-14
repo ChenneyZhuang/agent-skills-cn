@@ -1,0 +1,24 @@
+{
+  "name": "agent-skills-cn",
+  "version": "0.2.0",
+  "description": "Bilingual (EN/CN) agent skills: email deliverability audit, competitor recon, resume localization CN-to-EN, and a delivery checklist — battle-tested domain workflows packaged as open SKILL.md files, portable across Claude Code, DSH, Hermes, and Codex.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChenneyZhuang/agent-skills-cn.git"
+  },
+  "keywords": [
+    "agent-skills",
+    "skill",
+    "bilingual",
+    "email-deliverability",
+    "competitor-research",
+    "resume",
+    "checklist"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

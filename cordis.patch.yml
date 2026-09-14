@@ -1,0 +1,6 @@
+# agent-skills-cn bundle patch: registers the bilingual skills package as a
+# plugin row so DSH discovers the bundled SKILL.md skills (under skills/).
+# The package ships skills only — no host-process code, no browser client.
+- insert:
+    - id: agent-skills-cn
+      name: 'agent-skills-cn'
