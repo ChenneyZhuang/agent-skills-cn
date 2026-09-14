@@ -20,6 +20,16 @@ Bilingual (EN/CN) agent skills: battle-tested domain workflows packaged as open 
 | [decision-records](https://github.com/ChenneyZhuang/decision-records) | 轻量决策记录：决策/备选/理由/可逆性五字段，追加式、替代不重写——理由比结论活得更久。The why outlives the what. |
 | [plain-business-english](https://github.com/ChenneyZhuang/plain-business-english) | 商务英文语域（面向非母语者）：先说重点、按事实本来的尺寸陈述、清除热情/道歉/确定性通胀。Facts at their size. |
 | [deliverable-versioning](https://github.com/ChenneyZhuang/deliverable-versioning) | 交付版本纪律：已发出即不可变、日期命名替代 final、一个权威交付目录+台账。Sent means immutable. |
+| [backlog-triage](https://github.com/ChenneyZhuang/backlog-triage) | 待办分诊：六种分类各带理由、放弃项归档、承诺变更并入单次审批。A list that only grows is not a plan. |
+| [web-cliplibrary](https://github.com/ChenneyZhuang/web-cliplibrary) | 网页剪藏库：URL+日期+逐字引文+笔记分离，源页死了照样可引用。Research that survives the session. |
+| [onboarding-pack](https://github.com/ChenneyZhuang/onboarding-pack) | 项目上手包：是什么/怎么跑/权威地图/潜规则/找谁，十分钟读完。The month of asking around, prepaid. |
+| [expense-capture](https://github.com/ChenneyZhuang/expense-capture) | 报销捕获：照实转录、不清晰就标注、税额只读不推、批次双向对账。Transcribe, flag, reconcile. |
+| [weekly-review](https://github.com/ChenneyZhuang/weekly-review) | 周回顾：承诺对结果逐条对账、成果以证据入账、顺延必须带新理由。Close loops, not vibes. |
+| [ask-batch](https://github.com/ChenneyZhuang/ask-batch) | 批量提问：问题停放分组、每题带默认值、一次问完、超时默认显式生效。One sitting instead of all-day interruptions. |
+| [estimate-before-build](https://github.com/ChenneyZhuang/estimate-before-build) | 先估后建：S/M/L/XL 档位+不确定性点名、范围vs预算交用户选、终点对账校准。Make the scope decision explicit. |
+| [changelog-capture](https://github.com/ChenneyZhuang/changelog-capture) | 变更日志捕获：改动当下写 who/what/upgrade 条目，发版时与实际 diff 双向核对。One minute while the diff is in hand. |
+| [template-instantiator](https://github.com/ChenneyZhuang/template-instantiator) | 模板实例化：盘点→替换→机械扫描→出示零残留证明。Proven clean, not assumed clean. |
+| [context-budget](https://github.com/ChenneyZhuang/context-budget) | 上下文预算：分层读文件、笔记落盘抗压缩、检查点复述——长任务靠笔记收尾而不是硬撑。The window is working memory — spend it deliberately. |
 
 ## Why bilingual / 为什么中英双语
 
