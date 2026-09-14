@@ -1,65 +1,41 @@
 # agent-skills-cn
 
-中英双语 Agent Skills —— 把实战打磨过的领域工作流做成开源 SKILL.md，Claude Code / DSH / Hermes / Codex 通用。
+中英双语 Agent Skills —— 把实战打磨过的领域工作流做成开放 SKILL.md，Claude Code / DSH / Hermes / Codex 通用。
 
-Bilingual (EN/CN) Agent Skills: battle-tested domain workflows packaged as open SKILL.md files, portable across Claude Code, DSH, Hermes, and Codex.
+Bilingual (EN/CN) agent skills: battle-tested domain workflows packaged as open SKILL.md files, portable across Claude Code, DSH, Hermes, and Codex.
 
-## Why / 为什么
+## Skills / 技能列表
 
-Skill 经济正在爆发（archify 60.9k⭐、humanizer 47.7k⭐），但现有中文生态全是工具/桥接类 —— 领域工作流知识型 skill 是空白。本项目把真实工作里反复验证过的工作流，按爆款 skill 的写法标准（正向表述、可判定完成标准、理念先行）做成中英双语 skill：正文英文（agent 消费、最大化受众），description 内嵌中文触发词，README 双语。
+每个 skill 独立成库：单独迭代、单独发版、名字即用途。Each skill lives in its own repo — one skill, one name, one release cycle.
 
-The skill economy is booming, but the Chinese-language ecosystem is all tooling and bridges — domain-workflow knowledge skills are missing. We package workflows that survived real use, written to the quality bar of top skills: positive phrasing, verifiable completion criteria, rationale first.
+| Skill | What it does / 干什么 |
+|---|---|
+| [email-deliverability-audit](https://github.com/ChenneyZhuang/email-deliverability-audit) | 四道顺序 DNS 闸门（格式/死域/MX/角色占位符），逐地址判定 sendable / risky / dead，绝不编造通过。Four DNS gates classify email addresses before your campaign finds out the hard way. |
+| [competitor-recon](https://github.com/ChenneyZhuang/competitor-recon) | 抱怨驱动的竞品调研：评论/论坛/issue 跟踪器取证 → 聚类未满足需求 → 对比表 + 值得抄/不值得做清单。Complaint-driven competitor research with cited evidence. |
+| [resume-localize-cn2en](https://github.com/ChenneyZhuang/resume-localize-cn2en) | 中文简历 → 英文技术简历：删人口统计学字段、职责改量化成果、统一拼写与日期、ATS 可解析、附完整变更清单。CN→EN resume localization for tech roles. |
+| [delivery-checklist](https://github.com/ChenneyZhuang/delivery-checklist) | 交付前核对：实开文件验行数/去重/占位符，增量文件对基线 diff，台账记录批次，候选数≠可发送数。Verify deliverables by opening the real file. |
+| [report-link-verification](https://github.com/ChenneyZhuang/report-link-verification) | 报告链接逐条当次实测：跟随重定向、反爬墙用浏览器 UA 重试、失败修复或删除。Fetch every link for real before a report ships. |
+| [project-handoff](https://github.com/ChenneyZhuang/project-handoff) | 项目跨会话交接：handoff.md 记录现状/带理由的决策/症状-原因-对策的坑，新会话免考古接手。Make the next session as smart as this one. |
 
-## Skills
+## Why bilingual / 为什么中英双语
 
-### [email-deliverability-audit](skills/email-deliverability-audit/SKILL.md)
-B2B 邮件列表可发送性审计：格式 → 死域 → MX → 占位符四道闸，逐地址判定 sendable / risky / dead，批量 CSV 进 CSV 出，绝不编造通过。
-Audit a B2B email list through four sequential gates (format, dead domain, MX, placeholder/role) classifying every address as sendable, risky, or dead — with a hard integrity rule: every verdict traces to a check that actually ran.
+Skill 正文用英文（agent 消费、最大化受众），description 内嵌中文触发词（中文任务描述也能自动命中），每个 README 双语、附真实实测案例。英文与中文生态对同一工作流的写法差异，本身就是这个系列的一手经验。
 
-```bash
-# Claude Code
-git clone https://github.com/<you>/agent-skills-cn && cp -r agent-skills-cn/skills/email-deliverability-audit ~/.claude/skills/
-# Hermes
-cp -r skills/email-deliverability-audit ~/.hermes/skills/
-```
-
-### [competitor-recon](skills/competitor-recon/SKILL.md)
-动手做功能前先跑的竞品侦察：枚举 3-6 个竞品 → 逐个提取功能/定价/定位/真实用户抱怨 → 抱怨聚类出差异化机会 → 对比表 + 值得抄 + 不值得做，每个功能灵感必须有真实抱怨佐证。
-Competitor recon before you build: enumerate 3-6 competitors, extract features/pricing/positioning/user complaints (reviews beat marketing), cluster complaints into differentiation opportunities, and deliver a comparison table plus copy-worthy and skip lists — every feature idea backed by a cited user complaint.
-
-```bash
-git clone https://github.com/<you>/agent-skills-cn && cp -r agent-skills-cn/skills/competitor-recon ~/.claude/skills/
-```
-
-### [resume-localize-cn2en](skills/resume-localize-cn2en/SKILL.md)
-中文简历 → 英文技术岗简历：淡化服务行业经历（有更强素材时整段删除）、删除人口统计学字段，职责改写为量化成果，语气诚恳平淡，拼写统一（AU 或 US），ATS 友好无表格。
-Localize a Chinese resume into an English technical CV: demote service-industry stints (cut them entirely when stronger material exists), strip demographic fields, convert duties into quantified outcomes, keep the tone plain and honest, unify to one spelling variant, keep it ATS-parsable.
-
-```bash
-git clone https://github.com/<you>/agent-skills-cn && cp -r agent-skills-cn/skills/resume-localize-cn2en ~/.claude/skills/
-```
-
-### [delivery-checklist](skills/delivery-checklist/SKILL.md)
-交付物发出前核对清单：只留收件人真正要用的列、表头用收件人的语言、实开文件核对行数与去重计数、已发批次入台账、文件进既定交付目录、候选数与可发送数分开报。
-Pre-send verification for deliverables: keep only the columns the recipient acts on with headers in their language, open the real file to verify row/dedup counts, log sent batches in a ledger, keep files in the agreed delivery directory, and report candidate vs sendable counts as different numbers.
-
-```bash
-git clone https://github.com/<you>/agent-skills-cn && cp -r agent-skills-cn/skills/delivery-checklist ~/.claude/skills/
-```
+Bodies are English (agent-facing, maximum reach); descriptions carry Chinese trigger words so Chinese task phrasings still auto-load the skill. Every README is bilingual and includes a worked example from live testing.
 
 ## Install / 安装
 
-| Platform | Method |
-|---|---|
-| Claude Code | `cp -r skills/<name> ~/.claude/skills/` |
-| DSH | 复制到 DSH 的 skills 目录（或按其插件规范打包） |
-| Hermes | `cp -r skills/<name> ~/.hermes/skills/` |
-| Codex | 参考 `.claude-plugin/` 打包后按 Codex 插件机制安装 |
+```bash
+# Claude Code — the clone IS the install
+git clone https://github.com/ChenneyZhuang/<skill-name> ~/.claude/skills/<skill-name>
+# Hermes
+cp -r <skill-name> ~/.hermes/profiles/<profile>/skills/
+```
 
 每个 skill 独立可用，互不依赖。Each skill is standalone — no cross-dependencies.
 
 ## Status / 状态
 
-v0.2.0 — 4 个 skill 全部在 Hermes 真实场景实测通过（邮箱四道闸 DNS 实测 6 样本全对、竞品调研产出带源链接对比表、简历本地化完整走 5 步、交付核对实抓出 185 个表内重复行），并按实测结果修订。License: MIT。
+v0.2.0 — 前四个 skill 在真实场景实测通过并按实测修订；后两个按同一"起草→实测→发布"流程进行中。License: MIT.
 
-v0.2.0 — all four skills live-tested in real scenarios (DNS-verified email audits, a sourced competitor recon, a full resume localization run, a delivery audit that caught 185 duplicate rows) and revised from the findings. License: MIT.
+v0.2.0 — the first four skills are live-tested in real scenarios and revised from findings; the next two follow the same draft → live-test → publish pipeline. License: MIT.
