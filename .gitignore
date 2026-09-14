@@ -1,0 +1,15 @@
+# Private project files
+handoff.md
+runs/
+
+# OS
+.DS_Store
+
+# Editor
+*.swp
+.idea/
+.vscode/
+
+# Working files
+*.log
+*.tmp

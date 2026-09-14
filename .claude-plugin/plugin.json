@@ -1,0 +1,9 @@
+{
+  "name": "agent-skills-cn",
+  "description": "Bilingual (EN/CN) agent skills: email deliverability audit, competitor recon, resume localization CN-to-EN, and a delivery checklist — battle-tested domain workflows as open SKILL.md files.",
+  "version": "0.2.0",
+  "author": {
+    "name": "ChenneyZhuang"
+  },
+  "license": "MIT"
+}
