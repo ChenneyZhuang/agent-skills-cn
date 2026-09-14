@@ -4,7 +4,7 @@
 
 Bilingual (EN/CN) agent skills: battle-tested domain workflows packaged as open SKILL.md files, portable across Claude Code, DSH, Hermes, and Codex.
 
-## Skills / 技能列表
+## Skills / 技能列表（19 个）
 
 每个 skill 独立成库：单独迭代、单独发版、名字即用途。Each skill lives in its own repo — one skill, one name, one release cycle.
 
@@ -14,7 +14,6 @@ Bilingual (EN/CN) agent skills: battle-tested domain workflows packaged as open 
 | [competitor-recon](https://github.com/ChenneyZhuang/competitor-recon) | 抱怨驱动的竞品调研：评论/论坛/issue 跟踪器取证 → 聚类未满足需求 → 对比表 + 值得抄/不值得做清单。Complaint-driven competitor research with cited evidence. |
 | [resume-localize-cn2en](https://github.com/ChenneyZhuang/resume-localize-cn2en) | 中文简历 → 英文技术简历：删人口统计学字段、职责改量化成果、统一拼写与日期、ATS 可解析、附完整变更清单。CN→EN resume localization for tech roles. |
 | [delivery-checklist](https://github.com/ChenneyZhuang/delivery-checklist) | 交付前核对：实开文件验行数/去重/占位符，增量文件对基线 diff，台账记录批次，候选数≠可发送数。Verify deliverables by opening the real file. |
-| [report-link-verification](https://github.com/ChenneyZhuang/report-link-verification) | 报告链接逐条当次实测：跟随重定向、反爬墙用浏览器 UA 重试、失败修复或删除。Fetch every link for real before a report ships. |
 | [project-handoff](https://github.com/ChenneyZhuang/project-handoff) | 项目跨会话交接：handoff.md 记录现状/带理由的决策/症状-原因-对策的坑，新会话免考古接手。Make the next session as smart as this one. |
 | [verify-claims](https://github.com/ChenneyZhuang/verify-claims) | 主张核验：文档里每条可核验主张分类分级、追溯到最强来源、当次实测（开链接/重算总数），核不了的如实标注——文档声明自己的证据等级。Every claim carries evidence or a label. |
 | [decision-records](https://github.com/ChenneyZhuang/decision-records) | 轻量决策记录：决策/备选/理由/可逆性五字段，追加式、替代不重写——理由比结论活得更久。The why outlives the what. |
